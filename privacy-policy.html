@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Auto-Poster Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #f4f2ec; --surface: #ffffff; --ink: #1e1c18; --ink-muted: #6f6a5c;
+    --rule: #ddd7c8; --accent: #3d6b5c; --accent-soft: #e7efe9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17181a; --surface: #1f2023; --ink: #ece9e2; --ink-muted: #a39d8c;
+      --rule: #35362f; --accent: #7fbfae; --accent-soft: #202f2b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17181a; --surface: #1f2023; --ink: #ece9e2; --ink-muted: #a39d8c;
+    --rule: #35362f; --accent: #7fbfae; --accent-soft: #202f2b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    padding-block: 48px;
+  }
+  .sheet { max-width: 700px; margin: 0 auto; padding: 0 20px; }
+  .doc-card {
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 44px clamp(20px, 6vw, 64px) 56px;
+  }
+  .eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.72rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted);
+    border-bottom: 1px solid var(--rule); padding-bottom: 18px; margin-bottom: 32px;
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 500;
+    font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.15;
+    text-wrap: balance; margin: 0 0 8px; color: var(--ink);
+  }
+  .subtitle { color: var(--ink-muted); font-size: 0.98rem; margin: 0 0 40px; max-width: 58ch; }
+  .clause {
+    display: grid; grid-template-columns: 40px 1fr; gap: 4px 18px;
+    padding: 26px 0; border-top: 1px solid var(--rule);
+  }
+  .clause:first-of-type { border-top: none; padding-top: 0; }
+  .clause-number { font-family: "Fraunces", Georgia, serif; font-size: 1.5rem; color: var(--accent); line-height: 1.3; }
+  .clause h2 { grid-column: 2; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.08rem; margin: 0 0 8px; }
+  .clause p, .clause ul { grid-column: 2; margin: 0 0 10px; line-height: 1.65; max-width: 62ch; color: var(--ink); }
+  .clause p:last-child, .clause ul:last-child { margin-bottom: 0; }
+  .clause ul { padding-left: 1.1em; }
+  .clause li { margin-bottom: 6px; }
+  code {
+    background: var(--accent-soft); color: var(--accent); padding: 1px 6px;
+    border-radius: 3px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.88em;
+  }
+  a { color: var(--accent); }
+  .footer-nav {
+    margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--rule);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+    font-size: 0.85rem; color: var(--ink-muted);
+  }
+  .footer-nav a { text-decoration: none; font-weight: 600; }
+  .footer-nav a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="doc-card">
+    <div class="eyebrow">
+      <span>Doc — Privacy Policy</span>
+      <span>Effective 14 Sep 2026</span>
+    </div>
+
+    <h1>Content Auto-Poster</h1>
+    <p class="subtitle">A personal, single-user application built and operated by Jamie Boylan, used solely to publish their own videos to their own YouTube and TikTok accounts. It is not distributed to, or used by, anyone else.</p>
+
+    <div class="clause">
+      <span class="clause-number">01</span>
+      <h2>Scope</h2>
+      <p>This policy covers the single application described above. It is the only product this policy applies to, and it has no other users besides its owner.</p>
+    </div>
+
+    <div class="clause">
+      <span class="clause-number">02</span>
+      <h2>What data this application accesses</h2>
+      <p>When connected to the owner's accounts, the application requests only the permissions needed to upload and publish video content the owner submits through it:</p>
+      <ul>
+        <li><strong>YouTube</strong> — upload access via the YouTube Data API (scope <code>youtube.upload</code>), used to publish videos to the connected channel.</li>
+        <li><strong>TikTok</strong> — video publishing access via the Content Posting API (scopes <code>video.publish</code>, <code>video.upload</code>), used to upload videos to the connected account.</li>
+      </ul>
+      <p>No other data is read, collected, or processed from these accounts — no analytics, followers, messages, or other users' content.</p>
+    </div>
+
+    <div class="clause">
+      <span class="clause-number">03</span>
+      <h2>How data is stored</h2>
+      <p>Authorization tokens issued by YouTube and TikTok are stored locally on the owner's own computer only. They are never transmitted to or stored on any third-party server — this application has no backend server of its own.</p>
+    </div>
+
+    <div class="clause">
+      <span class="clause-number">04</span>
+      <h2>Data sharing</h2>
+      <p>No data is sold, shared, or transmitted to any third party. Video files and metadata (title, description, tags, captions) are sent only to YouTube and TikTok, as directed by the owner, to publish content the owner created.</p>
+    </div>
+
+    <div class="clause">
+      <span class="clause-number">05</span>
+      <h2>Advertising and tracking</h2>
+      <p>This application contains no advertising, analytics, or tracking of any kind.</p>
+    </div>
+
+    <div class="clause">
+      <span class="clause-number">06</span>
+      <h2>Contact</h2>
+      <p>Questions about this policy can be sent to <a href="mailto:jamieboylan87@gmail.com">jamieboylan87@gmail.com</a>.</p>
+    </div>
+
+    <div class="footer-nav">
+      <a href="index.html">&larr; Content Auto-Poster</a>
+      <a href="terms-of-service.html">Terms of Service &rarr;</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
